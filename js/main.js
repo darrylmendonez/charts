@@ -49,6 +49,15 @@
           data: [100, 20, 60, 20, 80, 55, 90],
         },
       ]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: true,
+          }
+        }]
+      }
     }
   });
 
