@@ -3,7 +3,7 @@ const CHART = document.getElementById("line-chart");
 Chart.defaults.scale.ticks.beginAtZero = true;
 
 let barChart = new Chart(CHART, {
-  type: 'pie',
+  type: 'doughnut',
   data: {
     labels: ['Strength', 'Skill', 'Health', 'Speed', 'Luck'],
     datasets: [
@@ -15,6 +15,8 @@ let barChart = new Chart(CHART, {
     ]
   },
   options: {
+    cutoutPercentage: 20,
+    rotation: Math.PI * 0.5,
     animation: {
       animateScale: true
     }
