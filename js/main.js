@@ -3,16 +3,23 @@ const CHART = document.getElementById("line-chart");
 Chart.defaults.scale.ticks.beginAtZero = true;
 
 let barChart = new Chart(CHART, {
-  type: 'bar',
+  type: 'radar',
   data: {
-    labels: ['Jan', 'Feb', 'March', 'April'],
+    labels: ['Strength', 'Skill', 'Health', 'Speed', 'Luck'],
     datasets: [
       {
-        label: 'Number Per Month',
-        backgroundColor: '#00FF00',
+        label: 'Points',
+        backgroundColor: 'rgba(00, 255, 00, 0.1)',
         borderColor: '#00FF00',
         borderWidth: 2,
-        data: [10, 20, 55, 30],
+        data: [10, 20, 55, 30, 10],
+      },
+      {
+        label: 'Points',
+        backgroundColor: 'rgba(0, 255, 255, 0.1)',
+        borderColor: '#00FFFF',
+        borderWidth: 2,
+        data: [5, 100, 20, 70, 80],
       }
     ]
   }
