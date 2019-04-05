@@ -12,38 +12,6 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">ChartJS Boilerplates</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="line-graph.html">Line Graph</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -79,6 +47,33 @@
         </div>
       </div>
     </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Radar Graph</h5> 
+            <div>
+              <canvas id="radar-chart" height="400" width="400"></canvas>
+            </div>
+            <br>
+            <a href="https://github.com/darrylmendonez/charts/blob/master/js/line-graph.js" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Bar Graph</h5> 
+            <div>
+              <canvas id="bar-chart" height="400" width="400"></canvas>
+            </div>
+            <br>
+            <a href="https://github.com/darrylmendonez/charts/blob/master/js/radar-graph.js" target="_blank" class="btn btn-primary">View Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -88,5 +83,6 @@
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
   <script src="js/line-graph.js"></script>
   <script src="js/bar-graph.js"></script>
+  <script src="js/radar-graph.js"></script>
 </body>
 </html>
