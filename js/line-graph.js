@@ -8,7 +8,7 @@ let lineChart = new Chart(CHART, {
     labels: ["January", "February", "March", "April", "May", "June", "July", "August"],
     datasets: [
       {
-        label: "My First Dataset",
+        label: "Dataset 1",
         fill: false,
         lineTension: 0.1,
         backgroundColor: "rgba(75, 192, 192, 0.4)",
@@ -29,7 +29,7 @@ let lineChart = new Chart(CHART, {
         data: [65, 59, 80, 81, 56, 55, 40, 50],
       },
       {
-        label: "My Second Dataset",
+        label: "Dataset 2",
         fill: true,
         lineTension: 0.5,
         backgroundColor: "rgba(75, 75, 192, 0.4)",
