@@ -44,22 +44,18 @@
       </div>
     </div>
   </nav>
+  <br>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="jumbotron">
-          <h1 class="display-4">ChartJS Boilerplates</h1>
-          <p class="lead">This is a menu of ChartJS boilerplate code of different style charts to get a quick start on development when creating charts.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
+      <div class="col-md-6 offset-md-3">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Line Graph</h5>
-            <p class="card-text">A line chart is a way of plotting data points on a line. Often, it is used to show trend data, or the comparison of two data sets.</p>
-            <a href="line-graph.html" class="btn btn-primary">View Line Graph </a>
+            <h5 class="card-title">Line Graph</h5> 
+            <div>
+              <canvas id="line-chart" height="400" width="400"></canvas>
+            </div>
+            <br>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
           </div>
         </div>
       </div>
@@ -71,6 +67,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js"></script>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/line-graph.js"></script>
 </body>
 </html>
